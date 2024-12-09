@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4fc;
+    color: #333;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #2b6cb0;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+}
+
+header h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #2b6cb0;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+header p {
+    margin: 5px 0;
+    color: #555;
+}
+
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #2b6cb0;
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: square;
+    margin: 10px 0 0 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .resume-container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+}
